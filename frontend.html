@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+  <head>
+  <body>
+    <div class="container">
+      <h1>Personal Form Ajax Validation</h1>
+      <form id="dataform"><br>
+          <p class="col-sm-2 text-right">Name:</p> <input class="col-sm-4" type="text" id="name" name="name"><span class="col-sm-6">ex. 3 - 15 letters</span><br><br>
+
+          <p class="col-sm-2 text-right">Postal Code:</p><input class="col-sm-4 col-sm-6" type="text" id="postal" name="postal"><span class="col-sm-6">ex. G8P-2B2</span><br><br>
+
+          <p class="col-sm-2 text-right">Phone Number:</p><input class="col-sm-4 col-sm-6" type="text" id="phone" name="phone"><span class="col-sm-6">ex. (905) 790-0805</span><br><br>
+
+          <p class="col-sm-2 text-right">Address: </p><input class="col-sm-4 col-sm-6" type="text" id="address" name="address"><span class="col-sm-6">ex. 102 Wellington Street North</span><br><br>
+
+          <br>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-primary" id="clear">Clear</button>
+          <button class="btn btn-primary" id="default" href="">Insert Data</button>
+
+          <ul id="errors"></ul>
+          <p id="success"></p>
+      </form>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</html>
